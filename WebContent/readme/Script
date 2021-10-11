@@ -60,5 +60,3 @@ ALTER TABLE favorites ADD FOREIGN KEY (favorites_member_id) REFERENCES  member(m
 ALTER TABLE mail ADD FOREIGN KEY (mail_sendid) REFERENCES member(member_id);
 ALTER TABLE mail ADD FOREIGN KEY (mail_postid) REFERENCES member(member_id);
 ALTER TABLE mail ADD FOREIGN KEY (mail_product_no) REFERENCES  product(product_no);
-
-SELECT count(product_like) FROM product
